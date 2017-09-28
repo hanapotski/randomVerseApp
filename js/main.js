@@ -47,6 +47,7 @@ $(document).ready(function(){
 // start with a new verse
 newVerse();
 
+// generate a new verse with every button click
 $("#button").on("click", function(){
   if (verse === 9){
     reset();
@@ -56,12 +57,14 @@ $("#button").on("click", function(){
   }
 });
 
+// generate new verse
 function newVerse(){
   $("#text").text(verses[verse].text);
   $("#findIn").text(verses[verse].findIn);
   verse++;
 }
 
+// reset counter
 function reset(){
     verse = 0;
   }
