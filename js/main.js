@@ -21,3 +21,7 @@ var verses = [
   },
 
 ];
+
+for (var i = 0; i <= verses.length; i++){
+  $("#")
+}
