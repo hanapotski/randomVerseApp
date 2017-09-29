@@ -20,18 +20,19 @@ h1.ui.header .sub.header {
 }
 
 .ui.segment {
-  margin: 5em auto;
+  margin: 5em auto .5em auto;
   max-width: 500px;
 }
 
 .ui.padded.segment {
-  padding: 4em 2.5em 2em 2.5em;
+  padding: 3em 2em 2em 2em;
 }
 
 #text {
   font-family: 'Cormorant', serif;
   font-size: 2em;
   margin: 0;
+  padding-top: 1em;
 }
 
 #findIn {
