@@ -79,5 +79,5 @@ function reset(){
 
 // Tweet button event handler
   $("#tweetButton").click(function() {
-    $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + verses[verse-1].text + " " + verses[verse-1].findIn);
+    $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + "\"" + verses[verse-1].text + "\" " + verses[verse-1].findIn);
   });
