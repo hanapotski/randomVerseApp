@@ -4,7 +4,36 @@ body {
   color: #767676;
 }
 
+.main {
+  margin-top: 6em;
+}
+
+h1.ui.header {
+  font-size: 5rem;
+  color: #404040;
+  font-weight: 900;
+}
+
+h1.ui.header .sub.header {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.ui.segment {
+  margin: 5em auto;
+  max-width: 500px;
+}
+
+.ui.padded.segment {
+  padding: 4em 2.5em;
+}
+
 #text {
   font-family: 'Cormorant', serif;
   font-size: 2em;
+  margin: 0;
+}
+
+#button {
+  margin-top: 1.5em;
 }
