@@ -61,6 +61,13 @@ $("#button").on("click", function(){
 function newVerse(){
   $("#text").html(verses[verse].text);
   $("#findIn").html(verses[verse].findIn);
+  $("#text").addClass("animated fadeIn");
+  $("#findIn").addClass("animated fadeIn");
+    setTimeout(function(){
+      $("#text").removeClass("animated fadeIn");
+      $("#findIn").removeClass("animated fadeIn");
+    }, 500);
+
   verse++;
 }
 
