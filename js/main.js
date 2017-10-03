@@ -1,47 +1,60 @@
-var verse = 0;
+//db.verses.find().pretty()
+//mongoimport --db randomverse --collection verses --type json --file verses.json --jsonArray 
 
-var verses = [
+// import verses from "verses.json"
+
+const verses = 
+[
   {
-    text: "Watch over your heart with all diligence, For from it flow the springs of life.",
-    findIn: "Proverbs 4:23"
+    "text": "Watch over your heart with all diligence, For from it flow the springs of life.",
+    "findIn": "Proverbs 4:23"
   },
   {
-    text: "Iron sharpens iron, So one man sharpens another.",
-    findIn: "Proverbs 27:17"
+    "text": "Iron sharpens iron, So one man sharpens another.",
+    "findIn": "Proverbs 27:17"
   },
   {
-    text: "A joyful heart is good medicine, But a broken spirit dries up the bones.",
-    findIn: "Proverbs 17:22"
+    "text": "A joyful heart is good medicine, But a broken spirit dries up the bones.",
+    "findIn": "Proverbs 17:22"
   },
   {
-    text: "A gentle answer turns away wrath, But a harsh word stirs up anger.",
-    findIn: "Proverbs 15:1"
+    "text": "A gentle answer turns away wrath, But a harsh word stirs up anger.",
+    "findIn": "Proverbs 15:1"
   },
   {
-    text: "Death and life are in the power of the tongue, And those who love it will eat its fruit.",
-    findIn: "Proverbs 18:21"
+    "text": "Death and life are in the power of the tongue, And those who love it will eat its fruit.",
+    "findIn": "Proverbs 18:21"
   },
   {
-    text: "He who despises his neighbor lacks sense, But a man of understanding keeps silent.",
-    findIn: "Proverbs 11:12"
+    "text": "He who despises his neighbor lacks sense, But a man of understanding keeps silent.",
+    "findIn": "Proverbs 11:12"
   },
   {
-    text: "A good name is to be more desired than great wealth, Favor is better than silver and gold.",
-    findIn: "Proverbs 22:1"
+    "text": "A good name is to be more desired than great wealth, Favor is better than silver and gold.",
+    "findIn": "Proverbs 22:1"
   },
   {
-    text: "He who walks with wise men will be wise, But the companion of fools will suffer harm.",
-    findIn: "Proverbs 13:20"
+    "text": "He who walks with wise men will be wise, But the companion of fools will suffer harm.",
+    "findIn": "Proverbs 13:20"
   },
   {
-    text: "The mouth of the righteous is a fountain of life, But the mouth of the wicked conceals violence.",
-    findIn: "Proverbs 10:11"
+    "text": "The mouth of the righteous is a fountain of life, But the mouth of the wicked conceals violence.",
+    "findIn": "Proverbs 10:11"
   },
   {
-    text: "He who digs a pit will fall into it, And he who rolls a stone, it will come back on him.",
-    findIn: "Proverbs 26:27"
-  },
+    "text": "He who digs a pit will fall into it, And he who rolls a stone, it will come back on him.",
+    "findIn": "Proverbs 26:27"
+  }
 ];
+
+// $.getJSON("https://bible-api.com/john 3:16", console.log);
+// fetch("http://bible-api.com/john  3:16", {
+//   method: "GET",
+//   headers: {"Access-Control-Allow-Origin": "*"},
+//   mode: "cors"
+// }).then(console.log);
+
+var verse = 0;
 
 $(document).ready(function(){
 // start with a new verse
@@ -79,5 +92,10 @@ function reset(){
 
 // Tweet button event handler
   $("#tweetButton").click(function() {
-    $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + "\"" + verses[verse-1].text + "\" " + verses[verse-1].findIn);
+    $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + "\"" + verses[verse-1].text + "\" " + verses[verse-1].findIn + " @homemadecoder");
+  });
+  
+// Facebook button event handler
+$("facebookButton").on("click", function() {
+      window.open("https://www.facebook.com/sharer/sharer.php?u=https://hanapotski.github.io/randomVerseApp/");
   });
