@@ -96,6 +96,6 @@ function reset(){
   });
   
 // Facebook button event handler
-$("facebookButton").on("click", function() {
+$("#facebookButton").on("click", function() {
       window.open("https://www.facebook.com/sharer/sharer.php?u=https://hanapotski.github.io/randomVerseApp/");
   });
