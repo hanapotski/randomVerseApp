@@ -1,1 +1,2 @@
-# randomVerseApp
+# Random Verse App
+Project for FreeCodeCamp
