@@ -44,11 +44,13 @@ h1.ui.header .sub.header {
   margin-top: 2.5em;
 }
 
-
-@media only screen and (max-width: 768px){
+.heart {
+  color: #FF0000;
+}
+/*@media only screen and (max-width: 768px){
   .ui {
     display: block;
     float: none;
     width: auto;
   }
-}
+}*/
